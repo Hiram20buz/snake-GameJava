@@ -103,6 +103,8 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
     public void placeFood(){
         food.x = random.nextInt(boardWidth/tileSize);
         food.y = random.nextInt(boardHeight/tileSize);
+        System.out.println(food.x);
+        System.out.println(food.y);
     }
 
     public void move() {
@@ -155,6 +157,12 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
         repaint();
         if (gameOver) {
             gameLoop.stop();
+            /*
+            gameOver = false;
+            gameLoop = new Timer(100, this); //how long it takes to start timer, milliseconds gone between frames
+            gameLoop.start();
+
+             */
         }
     }
 
