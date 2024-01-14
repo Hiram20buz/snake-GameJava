@@ -161,7 +161,6 @@ public class SnakeGame extends JPanel implements ActionListener, KeyListener {
             gameOver = false;
             gameLoop = new Timer(100, this); //how long it takes to start timer, milliseconds gone between frames
             gameLoop.start();
-
              */
         }
     }
